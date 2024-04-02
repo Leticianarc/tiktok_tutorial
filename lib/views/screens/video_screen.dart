@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiktok_tutorial/views/screens/comment_screen.dart';
+// ignore: unused_import
 import 'package:tiktok_tutorial/views/widgets/circle_animation.dart';
 // ignore: unused_import
 import 'package:tiktok_tutorial/views/widgets/video_player_item.dart';
@@ -205,9 +206,6 @@ class VideoScreen extends StatelessWidget {
                                     ),
                                   )
                                 ],
-                              ),
-                              CircleAnimation(
-                                child: buildMusicAlbum('profile photo'),
                               ),
                             ],
                           ),
