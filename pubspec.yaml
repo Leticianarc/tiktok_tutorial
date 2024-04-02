@@ -28,11 +28,11 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  cloud_firestore: ^4.15.10
+  cloud_firestore: 4.15.1
   cupertino_icons: ^1.0.6
-  firebase_auth: ^4.18.0
-  firebase_core: ^2.27.2
-  firebase_storage: ^11.6.11
+  firebase_auth: 4.15.1
+  firebase_core: 2.26.0
+  firebase_storage: 11.6.0
   flutter:
     sdk: flutter
   get: ^4.6.6
@@ -55,16 +55,7 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/C:\Users\letic\tiktok_tutorial\assets\VOCÊ QUER O PARQUINHO DO GATO GALACTICO NA SUA CIDADE_ _shorts(1080P_HD).mp4
-   - assets/C:\Users\letic\tiktok_tutorial\assets\GATO GALACTICO e SARA Lançam novo Canal _GatoGalactico-Libras _shorts(1080P_HD).mp4
-   - assets/C:\Users\letic\tiktok_tutorial\assets\Eu Sou o Gato Galactico ---- _ Gato Galactico Músicas Divertidas para Crianças(1080P_HD).mp4
-   - assets/C:\Users\letic\tiktok_tutorial\assets\Gato Galactico Volta para PORTUGAL ! _ Show Gato Galactico em Aventura Prismágica em Portugal.mp4
-   - assets/C:\Users\letic\tiktok_tutorial\assets\Sempre sonhei em criar a festa da minha filha !!!.mp4
-   - assets/C:\Users\letic\tiktok_tutorial\assets\Novo Show Gato Galactico em Aventura Prismágica em Fortaleza.mp4
-   - assets/C:\Users\letic\tiktok_tutorial\assets\GATO GALACTICO em uma História Sobre DOCES e BALAS Prejudiciais !.mp4
-   - assets/C:\Users\letic\tiktok_tutorial\assets\FAMÍLIA É TUDO! Comenta como você passa tempo de qualidade com sua família.mp4
-   - assets/C:\Users\letic\tiktok_tutorial\assets\Olha que legal essa novidade da Happy! Agora eles possuem Inglês, em parceria com o  Que demais, né  A Happy English vem para agregar ainda mais nas aulas da Happy, aliando o ensino do Inglês com a tecnologia e dem.mp4
-   - assets/C:\Users\letic\tiktok_tutorial\assets\A MAGIA DAS REAÇÕES QUÍMICAS CASEIRAS -.mp4
+   - assets/
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages

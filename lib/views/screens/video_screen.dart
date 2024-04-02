@@ -76,10 +76,13 @@ class VideoScreen extends StatelessWidget {
         //itemCount: ,
         controller: PageController(initialPage: 0, viewportFraction: 1),
         scrollDirection: Axis.vertical,
+        itemCount: 9,
         itemBuilder: (context, index) {
           return Stack(
             children: [
-              //VideoPlayerItem(videoUrl: ,),
+              VideoPlayerItem(
+                videoUrl: "$index.mp4",
+              ),
               Column(
                 children: [
                   const SizedBox(
@@ -142,7 +145,8 @@ class VideoScreen extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              buildProfile('string url'),
+                              buildProfile(
+                                  'https://images.unsplash.com/photo-1500621137413-1a61d6ac1d44?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
                               Column(
                                 children: [
                                   InkWell(
@@ -167,7 +171,7 @@ class VideoScreen extends StatelessWidget {
                                   InkWell(
                                     onTap: () => Navigator.of(context).push(
                                       MaterialPageRoute(
-                                        builder: (context) => 
+                                        builder: (context) =>
                                             const CommentScreen(),
                                       ),
                                     ),

@@ -3,6 +3,7 @@ import 'package:tiktok_tutorial/constants.dart';
 import 'package:tiktok_tutorial/views/screens/auth/login_screen.dart';
 // ignore: unused_import
 import 'package:tiktok_tutorial/views/screens/auth/signup_screen.dart';
+import 'package:tiktok_tutorial/views/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
-      home: LoginScreen(),
+      home: HomeScreen(),
     );
   }
 }
