@@ -99,13 +99,53 @@ sem nenhuma configuração adicional.
 
 ## O que aprendi
 
+Foi neste projeto que saí de "escrever código que funciona" para entender **como um aplicativo se
+organiza por inteiro** — da interface até a camada de dados.
+
+**Arquitetura e organização de código**
+
+- Separar o projeto em `views`, `widgets` e `controllers`, entendendo por que a tela não deve
+  carregar a regra de negócio junto
+- Criar widgets reutilizáveis (`TextInputField`, `CustomIcon`) em vez de repetir marcação entre telas
+- Centralizar cores e a lista de abas em um único arquivo de constantes, de forma que mudar a
+  identidade visual do app aconteça em um lugar só
+
+**Interface e experiência do usuário**
+
 - Controlar o **ciclo de vida de players de vídeo** dentro de uma lista rolável, inicializando e
   liberando recursos na troca de página para não acumular consumo de memória
 - Montar layouts sobrepostos com `Stack` e `Positioned`, posicionando a interface sobre o vídeo
   sem bloquear o conteúdo
 - Usar `PageView` com rolagem vertical para reproduzir a navegação característica do app
-- Integrar **recursos nativos do dispositivo** (câmera e galeria) através do `image_picker`
-- Organizar o projeto separando telas, widgets reutilizáveis e controladores
+- Diferenciar `StatelessWidget` de `StatefulWidget` e reconhecer quando uma tela precisa guardar estado
+- Navegar entre telas com `Navigator` e `MaterialPageRoute`, passando dados de uma para a outra
+
+**Recursos nativos do dispositivo**
+
+- Acessar câmera e galeria com `image_picker`, tratando o caso de o usuário cancelar a seleção
+- Configurar permissões nativas no Android e no iOS — a parte que não aparece no código Dart e
+  sem a qual o app simplesmente falha no aparelho real
+- Registrar e empacotar arquivos de mídia como assets do aplicativo
+
+**Back-end e dados**
+
+- Estruturar um back-end com **Firebase**, entendendo qual serviço resolve cada problema:
+  autenticação de usuários, banco NoSQL (Firestore) e armazenamento de arquivos (Storage)
+- Modelar dados em coleções e documentos, pensando em como representar vídeos, curtidas e comentários
+- Escrever a curtida como operação atômica (`arrayUnion` / `arrayRemove`) em vez de ler, alterar e
+  gravar de volta — evitando conflito quando várias pessoas interagem ao mesmo tempo
+- Conectar estado assíncrono à interface com **GetX**, ligando o que chega do servidor ao que a
+  tela exibe
+
+**Ferramentas e processo**
+
+- Gerenciar dependências e versões pelo `pubspec.yaml`
+- Rodar e depurar em emulador Android e em aparelho físico
+- Entender a estrutura de um projeto multiplataforma, com as pastas nativas de Android, iOS,
+  web e desktop
+
+E o mais importante: aprendi a **ler documentação e código de terceiros** para resolver o que
+nenhum tutorial cobre — a habilidade que mais se repetiu em todos os projetos seguintes.
 
 ## Próximos passos
 
